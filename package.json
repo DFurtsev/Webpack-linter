@@ -6,11 +6,12 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
+    "lint": "eslint . src config",
     "prepare": "husky install"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "eslint . --ext .js,.jsx"
+      "pre-commit": "npm run-lint"
     }
   },
   "author": "",
@@ -20,7 +21,8 @@
     "eslint": "^9.23.0",
     "eslint-plugin-react": "^7.37.4",
     "globals": "^16.0.0",
-    "husky": "^8.0.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^15.5.0",
     "pug": "^2.0.4",
     "pug-loader": "^2.4.0",
     "webpack": "^5.98.0",
