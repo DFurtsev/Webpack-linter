@@ -1,0 +1,6 @@
+{
+  "contacts": [
+    { "id": 1, "name": "first_contact", "telephone": "12-34-56", "email": "first_contact@test.test" },
+    { "id": 2, "name": "second_contact", "telephone": "78-90-12", "email": "second_contact@test.test" }
+  ]
+}
